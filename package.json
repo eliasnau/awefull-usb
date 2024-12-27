@@ -1,0 +1,32 @@
+{
+  "name": "ducky-script",
+  "version": "1.0.0",
+  "description": "A flexible BadUSB script compiler",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ducky": "./dist/bin/ducky.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "ducky": "ts-node bin/ducky.ts"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "badusb",
+    "ducky",
+    "rubber-ducky"
+  ],
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "typescript": "^4.5.0",
+    "ts-node": "^10.0.0"
+  }
+} 
